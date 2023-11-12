@@ -1,0 +1,9 @@
+*{
+    background-color: yellow;
+}
+#fname,#lname,#phone,#mail,#pswd,#options{
+    background-color: white;
+}
+a{color: red;
+background-color: red;}
+.b{background-color: white;}
