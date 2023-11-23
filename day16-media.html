@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        body{
+            border: 2px solid black;
+            padding: 20px;
+            background-color: palevioletred;
+        }
+        .cd{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+            justify-content: space-between;
+            background-color: red;
+            padding: 10px;
+        }
+          @media screen and (min-width:375px)  {
+            h2{
+                color: blueviolet;
+                text-align: center;
+                background-color: bisque;
+                justify-content: center;
+            }
+          }
+          .menu{
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+
+          }
+          @media screen and (min-width:0px) and (max-width:320px ) {
+            .a{
+                border: 3px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 110px;
+                width: 110px;
+            }
+            .b,.c,.d,.e,.f{
+                display: none;
+            }  
+          }
+        @media screen and (min-width:321px) and (max-width:376px) {
+            .a,.b{
+                border: 3px solid black;
+                display: flex;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 137px;
+                width: 137px;
+            }
+            .c,.d,.e,.f{
+                display: none;
+            }  
+          } 
+          @media screen and (min-width:376px) and (max-width:426px) {
+            .a,.b,.c{
+                border: 3px solid black;
+                display: flex;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 110px;
+                width: 100px;
+            }
+            .d,.e,.f{
+                display: none;
+            }  
+          } 
+          @media screen and (min-width:426px) and (max-width:769px) {
+            .a,.b,.c,.d{
+                border: 3px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 155px;
+                width: 155px;
+            }
+            .e,.f{
+                display: none;
+            }  
+          } 
+          @media screen and (min-width:769px) and (max-width:1025px) {
+            .a,.b,.c,.d,.e{
+                border: 3px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 220px;
+                width: 173px;
+            }
+            .f{
+                display: none;
+            }  
+          } 
+          @media screen and (min-width:1025px) and (max-width:1441px) {
+            .a,.b,.c,.d,.e,.f{
+                border: 3px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                background-color: brown;
+                justify-content: center;
+                height: 220px;
+                width: 210px;
+            }
+          } 
+    </style>
+</head>
+<body>
+    <h2>NATURE GALLERY</h2>
+
+    <div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Login</li>
+            <li>Singup</li>
+            <li>Service</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+            <div class="cd">
+                <img class="a" src="https://th.bing.com/th?id=OIP.eD9-ocppLL5dduPpP7lzPAHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="150px" width="220px">
+                <img class="a" src="https://th.bing.com/th?id=OIP.hqgXmy-r13g-63xcvlz6AwHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="150px" width="220px">
+                <img class="b" src="https://th.bing.com/th/id/OIP.c4MCiDFgSGLsR_7-4-j0PwHaEK?w=311&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="250px">
+                <img class="b" src="https://th.bing.com/th/id/OIP.d75T3GuhCPUfmu4yDAyspwHaEo?w=301&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="c" src="https://th.bing.com/th/id/OIP.nklorQdjLJuloRgMo2ieYAHaEo?w=280&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="c" src="https://th.bing.com/th/id/OIP.IREe027_VyQFZnlwedTCvgHaEo?w=300&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="d" src="https://th.bing.com/th/id/OIP.anp0XQz24UeOEE5qf-5swQAAAA?w=282&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="d" src="https://th.bing.com/th/id/OIP._-RZWCyOTcZ21z5LB9yrwAHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="e" src="https://th.bing.com/th/id/OIP.FAqLtQqnls5UDVX1_Wt2XgHaEo?w=288&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="e" src="https://th.bing.com/th/id/OIP.HmM1SjCaflazIuXTelG4jgHaEK?w=280&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="f" src="https://th.bing.com/th/id/OIP.8wps3Zy1rPNh_zRs5ca1WQHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+                <img class="f" src="https://th.bing.com/th/id/OIP.anp0XQz24UeOEE5qf-5swQAAAA?w=282&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="150px" width="220px">
+            </div>
+   
+</body>
+</html>
