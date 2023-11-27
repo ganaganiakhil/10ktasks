@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        body{
+            background-color:skyblue;
+        }
+        .trf {
+            border: 3px solid blueviolet;
+            padding: 40px;
+            margin-left: 330px;
+            position: absolute;
+            top: 300px;
+            background-color: aqua;
+        }
+        .md{
+            border: 5px solid blue;
+            width: 650px;
+            background-color: bisque;
+        }
+        span{
+            background-color: black;
+            border-radius: 5%;
+            color: white;
+            border: 3px solid red;
+        }
+        span:hover{
+            background-color: aquamarine;
+            color: black;
+        }
+
+        input[value="none"]:checked~.trf {
+            transform: none;
+        }
+
+        input[value="rotate(10deg)"]:checked~.trf {
+            transform: rotate(10deg);
+        }
+
+        input[value="rotate(45deg)"]:checked~.trf {
+            transform: rotate(45deg);
+        }
+
+        input[value="rotateX(45deg)"]:checked~.trf {
+            transform: rotateX(45deg);
+        }
+
+        input[value="rotateX(100deg)"]:checked~.trf {
+            transform: rotateX(100deg);
+        }
+
+        input[value="rotateY(45deg))"]:checked~.trf {
+            transform: rotateY(45deg);
+        }
+
+        input[value="rotateY(80deg)"]:checked~.trf {
+            transform: rotateY(80deg);
+        }
+
+        input[value="skew(20deg,20deg)"]:checked~.trf {
+            transform: skew(20deg, 20deg);
+        }
+
+        input[value="skew(30deg,30deg)"]:checked~.trf {
+            transform: skew(30deg, 30deg);
+        }
+
+        input[value="skewX(30deg)"]:checked~.trf {
+            transform: skewX(30deg);
+        }
+
+        input[value="skewX(40deg)"]:checked~.trf {
+            transform: skewX(40deg);
+        }
+
+        input[value="skewY(30deg)"]:checked~.trf {
+            transform: skewY(30deg);
+        }
+
+        input[value="skewY(40deg)"]:checked~.trf {
+            transform: skewY(40deg);
+        }
+
+        input[value="translate(20px,10px)"]:checked~.trf {
+            transform: translate(20px, 10px);
+        }
+
+        input[value="translate(20px,20px)"]:checked~.trf {
+            transform: translate(20px, 20px);
+        }
+
+        input[value="scale(2,2)"]:checked~.trf {
+            transform: scale(2, 2);
+        }
+
+        input[value="scale(2,3)"]:checked~.trf {
+            transform: scale(2, 3);
+        }
+
+        input[value="matrix(0.866,0.7,-0.8,0.866,0,0)"]:checked~.trf {
+            transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0)
+        }
+
+        input[value="matrix(0.586,0.8,-0.8,0.586,0,0)"]:checked~.trf {
+            transform: matrix(0.586, 0.8, -0.8, 0.586, 0, 0);
+        }
+
+        input[value="matrix(0.586,0.8,-0.8,0.586,40,30)"]:checked~.trf {
+            transform: matrix(0.586, 0.8, -0.8, 0.586, 40, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Transforms</h1>
+    <div class="md">
+        <br><input type="radio" value="none" name="transform" checked /> <span>transform: none; </span><br><br>
+        <input type="radio" value="rotate(10deg)" name="transform" /> <span>transform: rotate(10deg); </span><br><br>
+        <input type="radio" value="rotate(45deg)" name="transform" /> <span> transform: rotate(45deg); </span><br><br>
+        <input type="radio" value="rotateX(45deg)" name="transform" /> <span> transform: rotateX(45deg); </span><br><br>
+        <input type="radio" value="rotateX(100deg)" name="transform" /> <span> transform: rotateX(100deg); </span><br><br>
+        <input type="radio" value="rotateY(45deg)" name="transform" /> <span> transform: rotateY(45deg); </span><br><br>
+        <input type="radio" value="rotateY(80deg)" name="transform" /> <span> transform: rotateY(80deg); </span><br><br>
+        <input type="radio" value="skew(20deg,20deg)" name="transform" /> <span> transform: skew(20deg,20deg); </span><br><br>
+        <input type="radio" value="skew(30deg,30deg)" name="transform" /> <span> transform: skew(30deg,30deg); </span><br><br>
+        <input type="radio" value="skewX(30deg)" name="transform" /> <span> transform: skewX(30deg); </span><br><br>
+        <input type="radio" value="skewX(40deg)" name="transform" /> <span> transform: skewX(40deg); </span><br><br>
+        <input type="radio" value="skewY(30deg)" name="transform" /> <span> transform: skewY(30deg); </span><br><br>
+        <input type="radio" value="skewY(40deg)" name="transform" /> <span> transform: skewY(40deg); </span><br><br>
+        <input type="radio" value="translate(20px,10px)" name="transform" /> <span> transform: translate(20px,10px); </span><br><br>
+        <input type="radio" value="translate(20px,20px)" name="transform" /> <span> transform: translate(20px,20px) </span><br><br>
+        <input type="radio" value="scale(2,2)" name="transform" /> <span> transform: scale(2,2); </span><br><br>
+        <input type="radio" value="scale(2,3)" name="transform" /> <span> transform: scale(2,3);  </span><br><br>
+        <input type="radio" value="matrix(0.866,0.7,-0.8,0.866,0,0)" name="transform" /> <span> transform: matrix(0.866,0.7,-0.8,0.866,0,0); </span><br><br>
+        <input type="radio" value="matrix(0.586,0.8,-0.8,0.586,0,0)" name="transform" /> <span> transform: matrix(0.586,0.8,-0.8,0.586,0,0); </span><br><br>
+        <input type="radio" value="matrix(0.586,0.8,-0.8,0.586,40,30)" name="transform" /> <span> transform: matrix(0.586,0.8,-0.8,0.586,40,30); </span><br><br>
+
+
+        <div class="trf">see the different transform</div>
+    </div>
+</body>
+
+</html>
