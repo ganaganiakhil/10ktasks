@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/dcd2278950.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        #c:hover {
+            background-color: red;
+            color: white !important;
+        }
+
+        .a {
+            display: flex;
+            gap: 20px;
+        }
+
+        ul {
+            background-color: black;
+        }
+
+        button:hover {
+            background-color: lightgray !important;
+            color: black !important;
+        }
+
+        .md {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            align-items: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            width: 900px;
+        }
+
+        .aa {
+            position: absolute;
+            color: white;
+            font-size: 30px !important;
+            margin-top: 400px !important;
+            margin-left: 20px;
+        }
+
+        .aaa {
+            position: absolute;
+            color: white;
+            font-size: 30px !important;
+            margin-top: 180px !important;
+            margin-left: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 248px 248px 248px 248px;
+            grid-template-rows: 220px 220px;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .item1 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 520px 520px;
+            grid-template-rows: 220px 220px;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .b {
+            border: 2px solid black;
+            padding: 20px;
+            width: 1060px;
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="background-color: black; padding: 20px;">
+            <i id="c" class="	fa fa-map-marker" style="font-size: 25px; color: red;">Logo</i>
+            <i id="c" class="fa-solid fa-magnifying-glass"
+                style="font-size: 25px; color: red; position: absolute; right: 0px;"></i>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.CYjcBPPD5mjd-Mmmd2zUlAHaEo?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                width="100%" height="700px">
+            <div class="md">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#Flight"> <i class="fa fa-plane"
+                                style="font-size:26px;"></i> Flight</a></li>
+                    <li><a data-toggle="tab" href="#Hotel"> <i class="fa fa-hotel" style="font-size: 20px;"></i>
+                            Hotel</a></li>
+                    <li><a data-toggle="tab" href="#Rental"> <i class="fa fa-car" style="font-size: 20px;"></i>
+                            Rental</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="Flight" class="tab-pane fade in active">
+                        <h3>Travel the world with us</h3>
+                        <form>
+                            <div class="a">
+                                <div>
+                                    <p>From</p><input type="text" placeholder="Departing from">
+                                </div>
+                                <div>
+                                    <p>To</p><input type="text" placeholder="Arriving at">
+                                </div>
+                            </div><br>
+                            <button style="background-color: gray; color: white;">Search and find dates</button>
+                        </form>
+                    </div>
+                    <div id="Hotel" class="tab-pane fade">
+                        <h3>Find the best hotels</h3>
+                        <p>Book a hotel with us and get the best fares and promotions.</p>
+                        <p>We know hotels - we know comfort.</p>
+                        <button style="background-color: grey; color: white;">Search Hotels</button>
+                    </div>
+                    <div id="Rental" class="tab-pane fade">
+                        <h3>Best car rental in the world!</h3>
+                        <p> <mark style="background-color: red; color: white;">DISCOUNT! </mark> Special offer if you
+                            book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+                        <input type="text" placeholder="Pick-up point"><br><br>
+                        <button style="background-color: gray; color: white;">Search Availability</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 style="margin-left: 240px;">Good Offers Right Now</h1>
+                <p style="margin-left: 240px;">Up to 50% discount.</p>
+                <div class="grid" style="margin-left: 220px">
+                    <div class="item1"
+                        style="background-image: url(https://www.w3schools.com/w3images/cinqueterre.jpg); background-repeat: no-repeat; background-size: cover;">
+                        <p class="aa">Cinque Terre</p>
+                    </div>
+                    <div class="item2"
+                        style="background-image: url(https://www.w3schools.com/w3images/newyork2.jpg); background-repeat: no-repeat; background-size: cover;">
+                        <p class="aaa">New York</p>
+                    </div>
+                    <div class="item3"
+                        style="background-image: url(https://www.w3schools.com/w3images/sanfran.jpg); background-repeat: no-repeat; background-size: cover;">
+                        <p class="aaa">San Francisco</p>
+                    </div>
+                    <div class="item4"
+                        style="background-image: url(https://www.w3schools.com/w3images/pisa.jpg); background-repeat: no-repeat; background-size: cover;">
+                        <p class="aaa">Pisa</p>
+                    </div>
+                    <div class="item5"
+                        style="background-image: url(https://www.w3schools.com/w3images/paris.jpg); background-repeat: no-repeat; background-size: cover;">
+                        <p class="aaa">Paris</p>
+                    </div>
+                </div>
+                <div>
+                    <h1 style="margin-left: 240px;">Explore Nature</h1>
+                    <p style="margin-left: 240px;">Travel with us and see nature at its finest.</p>
+                    <div class="grid1" style="margin-left: 220px">
+                        <div class="item11"
+                            style="background-image: url(https://www.w3schools.com/w3images/ocean2.jpg); background-repeat: no-repeat; background-size: cover;">
+                        </div>
+                        <div class="item22"
+                            style="background-image: url(https://www.w3schools.com/w3images/mountains2.jpg); background-repeat: no-repeat; background-size: cover;">
+                        </div>
+                        <div>
+                            <h2>West Coast, Norway</h2>
+                            <p style="opacity: 0.5;">Roundtrip from $79</p>
+                            <p>Praesent tincidunt sed tell us ut rutrum sed vitae justo.</p>
+                            <button> Buy Tickets</button>
+                        </div>
+                        <div>
+                            <h2>Mountains, Austria</h2>
+                            <p style="opacity: 0.5;">One-way from $39</p>
+                            <p>Praesent tincidunt sed tell us ut rutrum sed vitae justo.</p>
+                            <button> Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="b" style="margin-left: 240px; opacity: 0.7;">
+                    <h2>Get the best offers first!</h2>
+                    <p>Join our newsletter.</p>
+                    <div>
+                        <p>E-mail</p><input type="text" placeholder="Your Email address"
+                            style="color: black; width: 1000px;"><br><br>
+                        <button style="background-color: red; font-size: 20px;">Subscribe</button>
+                    </div>
+                </div>
+                <div style="margin-left: 240px;">
+                    <h1>Contact</h1>
+                    <p>Let us book your next trip!</p>
+                    <p><i class="	fa fa-map-marker"></i>Chicago, US</p>
+                    <p><i class="fas fa-phone"></i>Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p>
+                    <form>
+                        <input type="text" placeholder="NAME" style="width: 1050px;padding: 10px;"><br><br>
+                        <input type="text" placeholder="Email" style="width: 1050px;padding: 10px;"><br><br>
+                        <input type="text" placeholder="Message" style="width: 1050px;padding: 10px;"><br><br>
+                        <button style="background-color: black; color: white; padding: 10px;">SEND MESSAGE</button>
+                    </form>
+                    <footer>
+                        <h2 style="opacity: 0.7;">Find Us On</h2>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-snapchat"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p>Powered by <a href="https://www.w3schools.com/w3css/">w3css</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
