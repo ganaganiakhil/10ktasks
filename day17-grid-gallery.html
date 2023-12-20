@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gallery</title>
+    <style>
+        .md{
+            border: 4px solid blue;
+            border-radius: 40px;
+            padding: 10px;
+            background-color: bisque;
+            width: 1000px;
+            text-align: center;
+        }
+        .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10{
+            border: 4px solid black;
+        }
+        .cd{
+            border: 4px solid black;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }   
+        .item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item6{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item7{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item10{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="md">
+        <h1>Naruto Gallery</h1>
+        <div class="cd">
+
+            <div class="item item1"><img src="https://th.bing.com/th/id/OIP.CAQPfUE1ic4ZwsOTjJ5PaQHaKi?w=125&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="400"></div>
+            <div class="item item2"><img src="https://th.bing.com/th/id/OIP.Ria8CandQUKxWEYr34B9YwHaF7?w=205&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="200" width="600" alt=""></div>
+            <div class="item item3"><img src="https://th.bing.com/th/id/OIP.AF0z19voDpKHOpPVPvC4RQHaFj?w=278&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="200"></div>
+            <div class="item item4"><img src="https://th.bing.com/th/id/OIP.lu480cloS_Q4UIMew_W2WQHaFe?w=271&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="200"></div>
+            <div class="item item5"><img src="https://th.bing.com/th/id/OIP.4q4QUiWoFuQdLAsVyZsKzwHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></div>
+            <div class="item item6"><img src="https://th.bing.com/th/id/OIP.Utd4Hmu4Sz9fYrcTSrARRQHaLf?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="400"></div>
+            <div class="item item7"><img src="https://th.bing.com/th/id/OIP.vZDeMM8LRxiTcLvMMsTHnAHaEo?w=292&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="600"></div>
+            <div class="item item8"><img src="https://th.bing.com/th/id/OIP.CQxZkZyZKY6kVhKAealFYgHaQA?w=115&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="400"></div>
+            <div class="item item9"><img src="https://th.bing.com/th/id/OIP._oOdhPq1mUw3wNiJG5hscAHaLA?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="500"></div>
+            <div class="item item10"><img src="https://th.bing.com/th/id/OIP.XvwOHJZc9YiifA-iY5o2AAHaFj?w=215&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="600"></div>
+        </div>
+    </div>
+</body>
+</html>
